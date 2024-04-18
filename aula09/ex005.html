@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id = 'titulo '>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(28, 27, 27);
+            color: rgb(0, 13, 98);
+            font: normal 18pt Arial;
+
+        }
+    </style>
+    <script>
+        // Alterando o título da página
+        document.title = "DOM";
+    </script>
+</head>
+
+<body>
+    <h1 class="class1">Iniciando estudos em Java Script</h1>
+    <p id = "a" >Aqui vai o resultado</p>
+    <p id = "b">Aprendendo a usar o <strong>DOM</strong> em JavaScript. </p> 
+    <div id = "msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'red'
+        corpo.style.background = 'pink'
+        window.document.write('Esta escrito assim: ' + p1.innerText) 
+        window.document.write(window.document.URL)
+        document.write(p1.innerHTML)
+        var d = window.document.getElementById('msg')
+        /*d.innerText = 'Estou aguardando......'*/
+        d.style.background = 'green'
+        window.document.getElementById('msg').innerText = 'Olá!'
+       /* window.alert(p1.innerHTML)
+        window.alert(p1.innerText) */
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+        var c = window.document.querySelector('h1.class1')
+        c.style.color = 'red'
+        var pa = window.document.querySelector('p#a')
+        pa.style.color = 'blue'
+       window.document.write(pa.innerText)
+       var p2 = window.document.querySelector('p#b')
+       p2.style.color = 'black'
+       window.document.write(' Esta escrito assim: ' + p2.innerHTML)
+        
+       
+        
+
+
+    </script>
+</body>
+
+</html>

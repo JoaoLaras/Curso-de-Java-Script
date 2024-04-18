@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou Estrangeiro?</title>
+</head>
+<body>
+    <h1>Sistema de identificacao brasileiro ou Estrageiro? </h1>
+     Digite o nome do pais: <input type="string" name="namepais" id="namepais">
+     <input type="button" value="Verificar" onclick="teste()">
+     <div id= "res"> </div>
+    <script>
+        function teste(){
+            var paisdig = window.document.getElementById('namepais')
+            var res = window.document.querySelector('div#res')
+            var nome = paisdig.value
+        
+            res.innerHTML = ` <p> Seu pais é  <strong>${nome}</strong></p>`
+
+            if (nome != 'Brasil') {
+                res.innerHTML += '<p> Voce é estrangeiro<p/>'
+            } else {
+                res.innerHTML += '<p> Voce é Brasileiro<p/>'
+
+            }
+
+            
+        }
+
+       
+    </script>
+    
+   
+</body>
+</html>

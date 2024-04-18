@@ -1,0 +1,25 @@
+body {
+background: rgb(2, 56, 175);
+font: normal 15pt Arial;
+}
+header {
+color: white;
+text-align: center;
+
+}
+section {
+background: white;
+border-radius: 10px; /* BORDA ARREDONDADA*/
+padding: 15px; /* AUMENTAR ESPACO DENTRO DA BORDA*/
+width: 500px; /* LARGURA DA BORDA*/
+margin: auto; /* Centralizar*/
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.468);}
+
+select#flista {
+    width: 150px;
+}
+footer {
+color:white;
+text-align: center;
+font-style: italic;
+}

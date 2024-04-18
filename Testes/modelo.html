@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calcular a média</h1>
+   <p>
+    <input type="number" id="num1" >
+    <input type="number" id="num2">
+    <input type="number" id="num3">
+    <button onclick="calcularMedia()"> CalcularMedia </button>
+    <p id="resultado">
+        
+    </p>
+
+   </p>
+    <script>
+        function calcularMedia() {
+            var num1 = parseFloat(window.document.getElementById('num1').value)
+            var num2 = parseFloat(window.document.getElementById('num2').value)
+            var num3 = parseFloat(window.document.getElementById('num3').value)
+
+            var media = (num1+num2+num3)/3
+            window.document.getElementById('resultado').innerText = `a média é ${media}`
+        }
+    </script>
+   
+    <script src="script.js"></script>
+</body>
+</html>
